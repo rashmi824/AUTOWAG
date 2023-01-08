@@ -1,0 +1,170 @@
+
+body
+{
+    background-image: url(car-4885228_1920.jpg);
+    height: 100vh;
+	display: grid;
+    background-size:cover;
+    background-repeat: no-repeat;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.phonenumber
+{
+    height: 30px;
+    width: 65%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px;
+}
+.firstname
+{
+    font-size: 12px;
+    height: 20px;
+    width: 70%;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px;
+} 
+.lastname
+{
+   
+    font-size: 12px;
+    height: 20px;
+    width: 70%;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px;
+}
+.password
+{
+    font-size: 12px;
+    height: 20px;
+    width: 70%;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px;
+}
+.username
+{
+    font-size: 12px;
+    height: 20px;
+    width: 70%;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px;
+}
+.comments
+{
+ width: 100%;
+	height: 150px;
+	
+	border: solid 2px black;
+	padding-top: 5px;
+	padding-left: 5px;
+	background: transparent;
+	font-size: 16px;
+}
+
+.reset
+{
+    height: 30px;
+    width: 80px;
+    font-weight: bold;
+    color: rgb(202, 121, 15);
+    border-radius: 3px;
+    
+}
+.submit
+{
+    height: 30px;
+    width: 80px;
+    color: floralwhite;
+    background-color: #225280;
+    font-weight: bold;
+    border-radius: 7px;
+    
+}
+
+.Maindiv {
+	width: auto;
+	height: auto;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+    padding-left:50px;
+}
+.second1
+{
+  
+    margin-left: 520px;
+    margin-top:  90px;
+    margin-bottom: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    background-color:rgba(221, 209, 187, 0.212);
+    border-radius: 10px;
+    padding-bottom: 20px;
+    width: 400px;
+    
+     
+  }
+
+.second {
+  
+    margin-left: 520px;
+    margin-top:  90px;
+    margin-bottom: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    background-color:rgba(221, 209, 187, 0.212);
+    border-radius: 10px;
+    padding-bottom: 20px;
+    width: 400px;
+    
+   
+}
+.text
+{
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sendAMessage1
+{
+  background-color:darkcyan;
+  padding: 40px 60px;
+  border: solid;
+}
+.contact
+{
+  
+  margin-bottom: 0px;
+  margin-left: 310px;
+  
+
+}
+ul
+{
+  padding: 0;
+	margin: 0;
+}
+li
+{
+    list-style: none;
+	display: inline-block; 
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+i
+{
+  font-size: 14px;
+	line-height: 30px;
+	color: black;
+  
+}
+

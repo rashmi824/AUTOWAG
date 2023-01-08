@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<link href="Images/Logo.jpg" rel="icon" type="image/png">	 
+	<title> Purchase History </title>	 
+	<link href="Hiruni.css" rel="stylesheet" type="text/css"/>		
+</head>
+
+<script>
+   alert("Search Form is loading");
+</script>
+
+<body>
+	<!---- header----->
+		<div id="one1">
+			 <div class="wrapper"> 
+					 <img src="Images/logo.png" class="logo"/>
+					 <nav>
+					 <a href="../rashmi/index.php">Home</a>
+					 <a href="../Miulesi/about.html">About Us</a>
+					 <a href="../imash/categoryindex.html">Vehicle Fleet</a>
+					 <a href="../thushan/contact/contactus.html">Contact Us</a>
+					 <a href="FAQPage.html">FAQ</a>
+					 <a href="../thushan/LoginAsandRegisterAS/RegisterAs.html" border="2px solid white" >Register</a>
+					 <a href="../thushan/LoginAsandRegisterAS/loginAs.html">Login</a>
+					 </nav>
+			 </div>
+		</div>
+		<br>
+	<!----/ header----->
+	
+	
+	<div id="fullcontainerpurchase">
+		
+		<div class="">	
+				
+			<div class = "heading">
+				<h2 id="h2">Search Reservation History..! </h2>
+			</div>
+		
+	
+	
+	
+			<div class = "containersearch">
+				<form action = "" method = "POST">
+					<input type = "submit" class = "btn" name = "search" value ="SEARCH"> 
+					<table>
+					<tr>
+						<th>name</th>
+						<th>phone_number</th>
+						<th>email</th>
+						<th>vehicle_type</th>
+						<th>air_condition</th>
+						<th>need_driver</th>
+						<th>pickup_location</th>
+						<th>drop_location</th>
+						<th>pickup_date</th>
+						<th>pickup_time</th>
+						<th>returnDate</th>
+						<th>returnTime</th>
+						<th>stop_points</th>
+					</tr>
+					
+					<br> <br>
+				</form>
+								
+							
+						
+
+				<?php
+					$connection = mysqli_connect("localhost","root","");
+					$db = mysqli_select_db($connection , 'autowag');
+					if (isset($_POST['search']))
+					{
+						$query = "SELECT * from booking";
+						$query_run = mysqli_query($connection,$query );
+						
+						while($row = mysqli_fetch_array($query_run))
+						{
+						 ?>
+						   <tr>
+								<td> <?php echo $row['name'] ?> </td>
+								<td> <?php echo $row['phone_number'] ?> </td>
+								<td> <?php echo $row['email'] ?> </td>
+								<td> <?php echo $row['vehicle_type'] ?> </td>
+								<td> <?php echo $row['air_condition'] ?> </td>
+								<td> <?php echo $row['need_driver'] ?> </td>
+								<td> <?php echo $row['pickup_location'] ?> </td>
+								<td> <?php echo $row['drop_location'] ?> </td>
+								<td> <?php echo $row['pickup_date'] ?> </td>
+								<td> <?php echo $row['pickup_time'] ?> </td>
+								<td> <?php echo $row['returnDate'] ?> </td>
+								<td> <?php echo $row['returnTime'] ?> </td>
+								<td> <?php echo $row['stop_points'] ?> </td>	
+								
+						   </tr>
+						 <?php
+						}
+					}	
+				?>	
+				</table>
+			</div>	
+		</div>
+		
+	</div>	
+			
+				<!----footer----> 	 
+		<div id="one4">
+					 <div id="one5">
+						 <footer class="footer">
+							 <div class="container">
+								  <div class="row">
+									 <div class="footer-col">
+										<h4>SERVICES</h4>
+										 <ul>
+											 <li><a href="about.html">About Us</a></li>
+											 <li><a href="#">Vehicle Fleet</a></li>
+											 <li><a href="#">Contact Us</a></li>
+											 <li><a href="#">FAQ</a></li>
+											 <li><a href="login.html">Admin Login</a></li>
+										 </ul>
+									 </div>
+									 <div class="footer-col">
+										 <h4>VEHICLE FLEET</h4>
+										 <ul>
+											 <li><a href="#">Cars</a></li>
+											 <li><a href="#">SUVs</a></li>
+											 <li><a href="#">Vans & Busses</a></li>
+											 <li><a href="#">Utility vehicles & Lorries</a></li>
+											 <li><a href="#">Motobikes</a></li>
+											 <li><a href="#">Tuk Tuks</a></li>
+										 </ul>
+									 </div>
+									<div class="footer-col">
+										 <h4>CONTACT US</h4>
+										 <ul>
+											 <li><a href="#">Galle road,Colombo,SriLanka.</li>
+											 <li><a href="#">+94 11 4178526</li>
+											 <li><a href="#">+94 78 9873024</li>
+											 <li><a href="#">info@AUTOWAG.com</a></li>
+										 </ul>
+									 </div>
+									 <div class="footer-col">
+										 <h4>FOLLOW US</h4>
+										 <div class="social-links">
+											 <a href="#"><i class="fab fa-facebook-f"></i>f</a>
+											 <a href="#"><i class="fab fa-twitter"></i>t</a>
+											 <a href="#"><i class="fab fa-instagram"></i>i</a>
+											 <a href="#"><i class="fab fa-linkedin-in">li</i></a>			
+										 </div>
+									 </div>
+								 </div>
+							</div>
+						</footer>
+					 </div>
+		</div>
+	<!--/  Footer of the purchase history page -->	
+				
+		 
+			 	
+	 
+</body>
+</html>
